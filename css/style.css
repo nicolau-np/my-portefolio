@@ -407,7 +407,7 @@ footer p:nth-child(2) {
     color: #fff;
 }
 
-.top-button{
+#top-button{
     background-color: #f9004d;
     display: flex;
     position: fixed;
