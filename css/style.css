@@ -389,8 +389,8 @@ footer p:nth-child(2) {
 
     .hero {
         max-width: 100%;
-        background-position: right;
-        height: 85vh;
+        background-position: center;
+        height: 80vh;
     }
 
     .button-menu {
@@ -403,5 +403,67 @@ footer p:nth-child(2) {
         font-size: 20px;
         width: 210px;
         line-height: 25px;
+    }
+    .content{
+        top: 45%;
+    }
+    .newsletter form{
+        width: 300px;
+    }
+    .about {
+        padding: 50px 10px;  
+    }
+    .about img {
+        max-width: 100%;
+        height: auto;
+    }
+    .about-text {
+        max-width: 100%;
+    }
+    .main{
+        max-width: 100%;
+        flex-direction: column; 
+    }
+    .about-text h2{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+
+    .about-text h5{
+        font-size: 18px;
+    }
+
+    .about-text p{
+        font-size: 16px;
+    }
+    
+    .service {
+        padding: 50px 10px;
+    }
+
+    .title h2 {
+        font-size: 40px;
+        width: 100%;
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+
+    .box {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .contact-me p {
+        font-size: 25px;
+        text-align: center;
+        line-height: 30px;
+        margin-bottom: 35px;
+    }
+
+    footer p:nth-child(2) {
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        line-height: 26px;
     }
 }
