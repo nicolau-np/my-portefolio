@@ -8,7 +8,7 @@
 }
 
 .hero {
-    background-image: url('../images/001.png');
+    background-image: url('../images/001.PNG');
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -343,5 +343,5 @@ footer p:nth-child(2){
     color: #f9004d;
     bottom: 35px;
     font-size: 14px;
-    
+
 }
