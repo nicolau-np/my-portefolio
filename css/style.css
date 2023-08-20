@@ -421,6 +421,7 @@ footer p:nth-child(2) {
     color: #fff;
     font-size: 20px;
     text-decoration: none;
+    opacity: .8;
 }
 
 #whatsapp-button{
@@ -437,6 +438,7 @@ footer p:nth-child(2) {
     color: #fff;
     font-size: 20px;
     text-decoration: none;
+    opacity: .8;
 }
 
 
