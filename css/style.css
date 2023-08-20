@@ -12,7 +12,7 @@
     height: 100vh;
     width: 100%;
     background-size: cover;
-    background-position: right;
+    background-position: center;
 }
 
 nav {
@@ -20,6 +20,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 45px 8% 0 8%;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -50,6 +51,26 @@ nav ul li a {
 nav ul li a:hover {
     color: #f9004d;
     transition: .4s;
+}
+
+.button-menu {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 4px #191919 2px 2px 18px #858585;
+    width: 40px;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #f9004d;
+    border-radius: 2px;
+}
+
+.button-menu div {
+    border-bottom: 2px solid #fff;
+    margin: 2px 0;
+    width: 100%;
 }
 
 .btn {
@@ -122,21 +143,22 @@ h4 {
     right: 6px;
 }
 
-.about{
+.about {
     width: 100%;
     padding: 100px 0;
     background-color: #191919;
 }
 
-.about img{
+.about img {
     width: 430px;
     height: auto;
 }
-.about-text{
+
+.about-text {
     width: 550px;
 }
 
-.main{
+.main {
     width: 1130px;
     max-width: 95%;
     margin: 0 auto;
@@ -145,14 +167,14 @@ h4 {
     justify-content: space-between;
 }
 
-.about-text h2{
+.about-text h2 {
     color: #fff;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
 
-.about-text h5{
+.about-text h5 {
     text-transform: capitalize;
     color: #fff;
     letter-spacing: 2px;
@@ -160,7 +182,7 @@ h4 {
     margin-bottom: 25px;
 }
 
-.about-text p{
+.about-text p {
     color: #fcfc;
     letter-spacing: 1px;
     line-height: 28px;
@@ -168,7 +190,7 @@ h4 {
     margin-bottom: 45px;
 }
 
-button{
+button {
     background-color: #f9004d;
     color: #fff;
     text-decoration: none;
@@ -179,33 +201,34 @@ button{
     transition: .4s;
 }
 
-button:hover{
+button:hover {
     background-color: transparent;
-    border:2px solid #f9004d;
+    border: 2px solid #f9004d;
     cursor: pointer;
 }
 
-.service{
+.service {
     background-color: #101010;
     width: 100%;
     padding: 100px 0;
 }
 
-.title h2{
+.title h2 {
     color: #fff;
     font-size: 75px;
     width: 1130px;
     margin: 30px auto;
     text-align: center;
 }
-.box{
+
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 400px;
 }
 
-.card{
+.card {
     height: 365px;
     width: 335px;
     padding: 20px 35px;
@@ -217,7 +240,7 @@ button:hover{
     text-align: center;
 }
 
-.card i{
+.card i {
     font-size: 50px;
     display: block;
     text-align: center;
@@ -225,20 +248,20 @@ button:hover{
     color: #f9004d;
 }
 
-h5{
-    color:#fff;
+h5 {
+    color: #fff;
     font-size: 23px;
     margin-bottom: 15px;
 }
 
-.pra p{
+.pra p {
     color: #fcfc;
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
 }
 
-.card .button{
+.card .button {
     background-color: #f9004d;
     color: #fff;
     text-decoration: none;
@@ -249,13 +272,13 @@ h5{
     transition: .4s;
 }
 
-.card .button:hover{
+.card .button:hover {
     background-color: transparent;
-    border:2px solid #f9004d;
+    border: 2px solid #f9004d;
     cursor: pointer;
 }
 
-.contact-me{
+.contact-me {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -265,13 +288,14 @@ h5{
     background-color: #191919;
 }
 
-.contact-me p{
+.contact-me p {
     color: #fff;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 25px;
 }
-.contact-me .button-two{
+
+.contact-me .button-two {
     background-color: #f9004d;
     color: #fff;
     text-decoration: none;
@@ -282,13 +306,13 @@ h5{
     transition: .4s;
 }
 
-.contact-me .button-two:hover{
+.contact-me .button-two:hover {
     background-color: transparent;
-    border:2px solid #f9004d;
+    border: 2px solid #f9004d;
     cursor: pointer;
 }
 
-footer{
+footer {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -299,7 +323,7 @@ footer{
     justify-content: center;
 }
 
-footer p:nth-child(1){
+footer p:nth-child(1) {
     font-size: 30px;
     color: #fff;
     font-weight: bold;
@@ -307,19 +331,19 @@ footer p:nth-child(1){
 
 }
 
-footer p:nth-child(2){
+footer p:nth-child(2) {
     font-size: 17px;
-    color:#fff;
+    color: #fff;
     width: 500px;
     text-align: center;
     line-height: 26px;
 }
 
-.social{
+.social {
     display: flex;
 }
 
-.social a{
+.social a {
     width: 45px;
     height: 45px;
     text-decoration: none;
@@ -333,15 +357,51 @@ footer p:nth-child(2){
     font-size: 20px;
 }
 
-.social a:hover{
-   transform: scale(1.3);
-   transition: .3s;
+.social a:hover {
+    transform: scale(1.3);
+    transition: .3s;
 }
 
-.end{
+.end {
     position: absolute;
     color: #f9004d;
     bottom: 35px;
     font-size: 14px;
 
+}
+
+@media screen and (max-width:798px) {
+    nav {
+        padding: 30px 8% 0 8%;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .hero {
+        max-width: 100%;
+        background-position: right;
+        height: 85vh;
+    }
+
+    .button-menu {
+        display: flex;
+    }
+    h1{
+        font-size: 35px;
+    }
+    h3{
+        font-size: 20px;
+        width: 210px;
+        line-height: 25px;
+    }
 }
