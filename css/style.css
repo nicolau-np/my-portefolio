@@ -91,7 +91,7 @@ nav ul li a:hover {
 .content {
     position: absolute;
     top: 50%;
-    left: 8%;
+    left: 4%;
     transform: translateY(-50%);
 }
 
@@ -444,7 +444,7 @@ footer p:nth-child(2) {
 
 @media screen and (max-width:798px) {
     nav {
-        padding: 30px 8% 30px 8%;
+        padding: 30px 4% 30px 4%;
     }
 
     nav ul li {
