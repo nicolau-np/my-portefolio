@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portefo Nicolau Ngala Pungue">
     <meta name="keywords" content="portefolio, np, nicolau np, nicolasC'HTML">
-   
+
     <meta name="author" content="Nicolau NP">
-    
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -19,7 +19,7 @@
 
 <body>
     <!-- hero section start-->
-    <div class="hero">
+    <div class="hero" id="hero">
         <nav>
             <h2 class="logo">Portefo<span>lio</span></h2>
             <ul>
@@ -36,7 +36,18 @@
                 <div></div>
             </div>
         </nav>
-
+        <!---menu mobile-->
+        <div class="menu-mobile hidden">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <a href="#" class="btn-mobile">Subscribe</a>
+        </div>
+        <!--end-->
 
         <div class="content">
             <h4>Hello, my name is</h4>
@@ -126,13 +137,18 @@
         <p>Nicolau Pungue</p>
         <p>For More HTML, CSS and coding tutorial - plese
             click on the link below to subscribe to my channel</p>
-            <div class="social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-            </div>
-            <p class="end">&copy; Copyright 2023 Nicolau NP</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <p class="end">&copy; Copyright 2023 Nicolau NP</p>
     </footer>
+
+    <a href="#top" class="top-button"><i class="fa fa-arrow-up"></i></a>
+    <a href="#" id="whatsapp-button"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

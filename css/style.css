@@ -19,8 +19,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 45px 8% 0 8%;
+    padding: 45px 8% 20px 8%;
     flex-wrap: wrap;
+    box-shadow: 2px 2px 20px #191919;
 }
 
 .logo {
@@ -370,9 +371,80 @@ footer p:nth-child(2) {
 
 }
 
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.menu-mobile {
+    width: 100%;
+    background-color: #191919;
+    padding: 10px 20px 40px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-mobile {
+    font-weight: bold;
+    padding: 10px 25px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    color: #fff;
+    background-color: #f9004d;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.menu-mobile ul li {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.menu-mobile ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.top-button{
+    background-color: #f9004d;
+    display: flex;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#whatsapp-button{
+    background-color: #0b991b;
+    display: flex;
+    position: fixed;
+    bottom: 5%;
+    left: 2%;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
 @media screen and (max-width:798px) {
     nav {
         padding: 30px 8% 0 8%;
+        margin-bottom: 7%;
     }
 
     nav ul li {
@@ -396,47 +468,56 @@ footer p:nth-child(2) {
     .button-menu {
         display: flex;
     }
-    h1{
+
+    h1 {
         font-size: 35px;
     }
-    h3{
+
+    h3 {
         font-size: 20px;
         width: 210px;
         line-height: 25px;
     }
-    .content{
+
+    .content {
         top: 45%;
     }
-    .newsletter form{
+
+    .newsletter form {
         width: 300px;
     }
+
     .about {
-        padding: 50px 10px;  
+        padding: 50px 10px;
     }
+
     .about img {
         max-width: 100%;
         height: auto;
     }
+
     .about-text {
         max-width: 100%;
     }
-    .main{
+
+    .main {
         max-width: 100%;
-        flex-direction: column; 
+        flex-direction: column;
     }
-    .about-text h2{
+
+    .about-text h2 {
         font-size: 40px;
         margin-top: 30px;
     }
 
-    .about-text h5{
+    .about-text h5 {
         font-size: 18px;
     }
 
-    .about-text p{
+    .about-text p {
         font-size: 16px;
     }
-    
+
     .service {
         padding: 50px 10px;
     }
@@ -466,5 +547,13 @@ footer p:nth-child(2) {
         text-align: center;
         line-height: 26px;
         padding: 0 10px;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
     }
 }
