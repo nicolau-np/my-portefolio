@@ -91,7 +91,7 @@ nav ul li a:hover {
 .content {
     position: absolute;
     top: 50%;
-    left: 4%;
+    left: 8%;
     transform: translateY(-50%);
 }
 
@@ -480,6 +480,7 @@ footer p:nth-child(2) {
     }
 
     .content {
+        left: 4%;
         top: 45%;
         background-color: rgba(0, 0, 0, .6);
         padding: 10px;
