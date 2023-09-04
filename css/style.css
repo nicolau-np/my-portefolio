@@ -476,9 +476,55 @@ ul.tab li a:hover {
 }
 
 
+section.languages {
+    background-color: #101010;
+    padding-bottom: 20px;
+}
 
 
+.languages .title h6 {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 40px 0;
+}
 
+.languages .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 100px 0 160px;
+}
+
+.languages .row .card-language {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: inset 4px 4px 20px #858585;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.languages .row .card-language:hover{
+    background-color: #858585;
+    box-shadow: inset 4px 4px 20px #f9004d;
+}
+
+.languages .row .card-language:hover img{
+    transform: translateY(4px) scale(0.5);
+}
+
+.card-language img {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    transition: all .7s ease-in;
+}
 
 [data-anime] {
     opacity: 0;
@@ -497,7 +543,7 @@ ul.tab li a:hover {
     transform: translate3d(0, 50px, 0);
 }
 
-[data-anime].animate{
+[data-anime].animate {
     opacity: 1;
     transform: translate3d(0px 0px 0px);
 }
