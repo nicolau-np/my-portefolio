@@ -477,14 +477,14 @@ ul.tab li a:hover {
 
 
 section.languages {
-    background-color: #101010;
+    background-color: #383737;
     padding-bottom: 20px;
 }
 
 
 .languages .title h6 {
     text-align: center;
-    color: #fff;
+    color: #f9004d;
     font-weight: bold;
     font-size: 40px;
     padding: 40px 0;
