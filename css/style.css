@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hero {
     background-image: url('../images/001.PNG');
     height: 100vh;
@@ -212,6 +216,7 @@ button:hover {
     width: 100%;
     padding: 100px 0;
 }
+
 
 .title h2 {
     color: #fff;
@@ -439,6 +444,35 @@ footer p:nth-child(2) {
     font-size: 20px;
     text-decoration: none;
     opacity: .8;
+}
+
+.tabs{
+    margin: 0 8%;
+}
+
+ul.tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.tab li{
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+ul.tab li a{
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+padding: 15px 20px;
+background-color: #101010;
+border-radius: 30px;
+}
+
+ul.tab li a:hover{
+ background-color: transparent;
+ border: 2px solid #101010;
 }
 
 
