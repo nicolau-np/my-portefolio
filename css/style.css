@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -412,7 +412,7 @@ footer p:nth-child(2) {
     color: #fff;
 }
 
-#top-button{
+#top-button {
     background-color: #f9004d;
     display: flex;
     position: fixed;
@@ -429,7 +429,7 @@ footer p:nth-child(2) {
     opacity: .8;
 }
 
-#whatsapp-button{
+#whatsapp-button {
     background-color: #0b991b;
     display: flex;
     position: fixed;
@@ -446,35 +446,57 @@ footer p:nth-child(2) {
     opacity: .8;
 }
 
-.tabs{
+.tabs {
     margin: 0 8%;
 }
 
-ul.tab{
+ul.tab {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-ul.tab li{
+ul.tab li {
     list-style-type: none;
     margin: 0 10px;
 }
 
-ul.tab li a{
-color: #fff;
-text-decoration: none;
-font-weight: bold;
-padding: 15px 20px;
-background-color: #101010;
-border-radius: 30px;
+ul.tab li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+    background-color: #101010;
+    border-radius: 30px;
 }
 
-ul.tab li a:hover{
- background-color: transparent;
- border: 2px solid #101010;
+ul.tab li a:hover {
+    background-color: transparent;
+    border: 2px solid #101010;
 }
 
+
+
+
+
+
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px 0 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px 0 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0 0 0);
+}
 
 @media screen and (max-width:798px) {
     nav {

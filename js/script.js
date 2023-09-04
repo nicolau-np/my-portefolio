@@ -18,3 +18,23 @@ window.addEventListener('scroll', function(e){
     }
 });
 
+
+/**animate */
+const target = document.querySelectorAll('[data-anime]');
+const animateClass = "animate";
+
+function animeScroll(){
+const windowTop = window.scrollY +((window.innerHeight*3)/4);
+target.forEach((e)=>{
+    console.log(e.offsetTop);
+    if((windowTop) > e.offsetTop){
+e.classList.add('animate');
+    }
+})
+}
+
+window.addEventListener('scroll', e=>{
+animeScroll();
+})
+
+
