@@ -681,4 +681,14 @@ section.languages {
     .hidden {
         display: none;
     }
+
+    .languages .row .card-language {
+        width: 90px;
+        height: 90px;
+    }
+
+    .languages .row {
+        padding: 0 10px 0 10px;
+        
+    }
 }
