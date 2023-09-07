@@ -534,20 +534,20 @@ section.languages {
 }
 
 [data-anime="left"] {
-    transform: translate3d(-50px, 0, 0);
+    transform: translateX(-100px)
 }
 
 [data-anime="right"] {
-    transform: translate3d(-50px, 0, 0);
+    transform: translateX(100px);
 }
 
 [data-anime="top"] {
-    transform: translate3d(0, 50px, 0);
+    transform: translateY(100px);
 }
 
 [data-anime].animate {
     opacity: 1;
-    transform: translate3d(0px 0px 0px);
+    transform: translateX(0) translateY(0);
 }
 
 @media screen and (max-width:798px) {
