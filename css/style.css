@@ -533,6 +533,14 @@ section.languages {
     transition: .5s;
 }
 
+[data-rotate="deg"] {
+   animation-name: rotateDeg;
+   animation-timing-function: steps(4);
+   animation-duration: 1s;
+   animation-delay: 0.5s;   
+   animation-iteration-count: infinite;
+}
+
 [data-anime="left"] {
     transform: translateX(-100px)
 }
@@ -548,6 +556,12 @@ section.languages {
 [data-anime].animate {
     opacity: 1;
     transform: translateX(0) translateY(0);
+}
+
+@keyframes rotateDeg {
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 @media screen and (max-width:798px) {
