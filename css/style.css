@@ -691,4 +691,8 @@ section.languages {
         padding: 0 10px 0 10px;
         
     }
+
+    .main img{
+        display: none;
+    }
 }
